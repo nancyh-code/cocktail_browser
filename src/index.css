@@ -1,0 +1,14 @@
+html,
+body {
+  background-color: #f1f1fa;
+}
+
+header {
+  background-color: #c65d7b;
+  color: #f6e7d8;
+  text-align: center;
+}
+header h1 {
+  font-family: "Merienda", cursive;
+  font-weight: 700;
+}
