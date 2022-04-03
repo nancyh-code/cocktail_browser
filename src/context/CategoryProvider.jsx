@@ -5,6 +5,7 @@ const CategoryContext = createContext();
 
 const CategoryProvider = ({ children }) => {
   const [categories, setCategories] = useState([]);
+
   const obtainCategories = async () => {
     try {
       const url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?c=list";
@@ -19,6 +20,8 @@ const CategoryProvider = ({ children }) => {
     obtainCategories();
   }, []);
 
+  console.log(categories);
+
   return (
     <CategoryContext.Provider value={{ categories }}>
       {children}
@@ -27,4 +30,4 @@ const CategoryProvider = ({ children }) => {
 };
 
 export { CategoryProvider };
-export default { CategoryContext };
+export default CategoryContext;

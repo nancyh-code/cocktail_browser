@@ -3,14 +3,21 @@ body {
   background-color: #f1f1fa;
 }
 
-header {
+header,
+.btn-custom {
   background-color: #c65d7b;
   color: #f6e7d8;
-  text-align: center;
 }
+
+.btn-custom:hover {
+  background-color: #874356;
+  color: #f6e7d8;
+}
+
 header h1 {
   font-family: "Merienda", cursive;
   font-weight: 700;
+  text-align: center;
 }
 
 .custom-text {
