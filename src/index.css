@@ -12,3 +12,7 @@ header h1 {
   font-family: "Merienda", cursive;
   font-weight: 700;
 }
+
+.custom-text {
+  color: #874356;
+}

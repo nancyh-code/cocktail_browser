@@ -5,7 +5,7 @@ const EntryForm = () => {
     <Form>
       <Row>
         <Col md={6}>
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-3 custom-text">
             <Form.Label htmlFor="name">Drink Name</Form.Label>
             <Form.Control
               type="text"
@@ -15,7 +15,7 @@ const EntryForm = () => {
           </Form.Group>
         </Col>
         <Col md={6}>
-          <Form.Group className="mb-3">
+          <Form.Group className="mb-3 custom-text">
             <Form.Label htmlFor="category">Drink Category</Form.Label>
             <Form.Select id="category" name="category">
               <option>-Select Category-</option>
