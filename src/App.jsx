@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import EntryForm from "./components/EntryForm";
 
 function App() {
   return (
@@ -6,7 +7,9 @@ function App() {
       <header className="py-4">
         <h1>🍹 Cocktail Browser</h1>
       </header>
-      <Container className="mt-5">1</Container>
+      <Container className="mt-5">
+        <EntryForm />
+      </Container>
     </>
   );
 }
