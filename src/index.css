@@ -23,3 +23,9 @@ header h1 {
 .custom-text {
   color: #874356;
 }
+
+.card-custom {
+  background-color: #f68989;
+  color: #874356;
+  text-align: center;
+}

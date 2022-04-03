@@ -5,6 +5,8 @@ const DrinkContext = createContext();
 
 const DrinkProvider = ({ children }) => {
   const [drinks, setDrinks] = useState([]);
+  const [modal, setModal] = useState(false);
+
   const searchDrinks = async (datos) => {
     try {
       const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${datos.name}&c=${datos.category}`;
@@ -16,8 +18,14 @@ const DrinkProvider = ({ children }) => {
     }
   };
 
+  const modalHandleClick = () => {
+    setModal(!modal);
+  };
+
   return (
-    <DrinkContext.Provider value={{ searchDrinks, drinks }}>
+    <DrinkContext.Provider
+      value={{ searchDrinks, drinks, modalHandleClick, modal }}
+    >
       {children}
     </DrinkContext.Provider>
   );
